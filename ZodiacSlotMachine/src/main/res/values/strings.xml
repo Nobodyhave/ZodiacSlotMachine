@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Zodiac Slot Machine</string>
+    <string name="action_about">About</string>
+    <string name="text_about">Application is written as a solution of Zodiac Interactive BitByte 2014 task.\n\n
+        Author: Nesterov Aleksander, aka \"Nobodyhave\"\n\n
+        MD5 of individual key: 475c3b1e8a71f9ae629fd9948b7f36f3\n
+        hope I haven\'t done a mistake when copying it to hash generator :)
+    </string>
+
+    <string name="you_won">You won: %1$d</string>
+    <string name="game_over_title">Game over</string>
+    <string name="game_over_message">Your balance reached 0. Do you want another try?</string>
+    <string name="balance">Balance: %1$d</string>
+    <string name="min">Min</string>
+    <string name="decrease">-</string>
+    <string name="increase">+</string>
+    <string name="max">Max</string>
+    <string name="spin">Spin</string>
+    <string name="max_and_spin">Bet max and spin</string>
+    <string name="collect">Collect the win</string>
+
+</resources>

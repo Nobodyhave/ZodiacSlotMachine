@@ -1,0 +1,156 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_main"
+    tools:context="com.zodiac.slotmachine.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_medium"
+        tools:context="com.zodiac.slotmachine.MainActivity">
+
+        <LinearLayout
+            android:id="@+id/scoreboard_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_text"
+            android:paddingTop="@dimen/padding_small"
+            android:paddingBottom="@dimen/padding_small"
+            android:paddingLeft="@dimen/touch_item_size"
+            android:paddingRight="@dimen/touch_item_size"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="Balance: 100"
+                style="@style/Text.InfoText"/>
+
+            <TextView
+                android:id="@+id/lbl_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                tools:text="You won: 4"
+                style="@style/Text.InfoText"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/slot_machine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scoreboard_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:layout_gravity="center_horizontal">
+
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/slot_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/slot_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/slot_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bet_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/slot_machine"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_min_bet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/touch_item_size"
+                android:text="@string/min"
+                style="@style/AppTheme.Button"/>
+
+            <Button
+                android:id="@+id/btn_decrease_bet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/touch_item_size"
+                android:minWidth="@dimen/touch_item_size"
+                android:text="@string/decrease"
+                style="@style/AppTheme.Button"/>
+
+            <TextView
+                android:id="@+id/lbl_bet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_text"
+                android:minHeight="@dimen/touch_item_size"
+                android:gravity="center"
+                tools:text="1"
+                style="@style/Text.InfoText"/>
+
+            <Button
+                android:id="@+id/btn_increase_bet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/touch_item_size"
+                android:minWidth="@dimen/touch_item_size"
+                android:text="@string/increase"
+                style="@style/AppTheme.Button"/>
+
+            <Button
+                android:id="@+id/btn_max_bet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/touch_item_size"
+                android:text="@string/max"
+                style="@style/AppTheme.Button"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_spin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bet_layout"
+            android:minHeight="@dimen/touch_item_size"
+            android:text="@string/spin"
+            style="@style/AppTheme.Button"/>
+
+        <Button
+            android:id="@+id/btn_max_and_spin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_spin"
+            android:minHeight="@dimen/touch_item_size"
+            android:text="@string/max_and_spin"
+            style="@style/AppTheme.Button"/>
+
+        <Button
+            android:id="@+id/btn_collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_max_and_spin"
+            android:minHeight="@dimen/touch_item_size"
+            android:text="@string/collect"
+            android:enabled="false"
+            style="@style/AppTheme.Button"/>
+
+    </RelativeLayout>
+
+</ScrollView>

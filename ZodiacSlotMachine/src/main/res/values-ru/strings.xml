@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Зодиак: однорукий бандит</string>
+    <string name="action_about">О программе</string>
+    <string name="text_about">Приложение написано как решение задачи на фестивале BitByte 2014 для компании Zodiak Interactive\n\n
+        Автор: Нестеров Александр, aka \"Nobodyhave\"\n\n
+        MD5 индивидуального ключа: 475c3b1e8a71f9ae629fd9948b7f36f3\n
+        надеюсь, что не ошибся когда копировал ключ с онлайновый генератор :)
+    </string>
+
+    <string name="you_won">Вы выиграли: %1$d</string>
+    <string name="game_over_title">Игра окончена</string>
+    <string name="game_over_message">Ваш баланс достиг 0. Попытаетесь еще раз?</string>
+    <string name="balance">Баланс: %1$d</string>
+    <string name="min">Мин</string>
+    <string name="decrease">-</string>
+    <string name="increase">+</string>
+    <string name="max">Макс</string>
+    <string name="spin">Крутить</string>
+    <string name="max_and_spin">Поставить максимум и крутить</string>
+    <string name="collect">Забрать выигрыш</string>
+
+</resources>
